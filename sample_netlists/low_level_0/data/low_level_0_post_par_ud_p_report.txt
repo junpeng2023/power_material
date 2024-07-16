@@ -1,0 +1,63 @@
+****************************************
+Report : Time Based Power
+	-net_power
+	-hierarchy
+	-sort_by net_switching_power
+	-power_greater_than       0
+	-nosplit
+Design : low_level_0
+Version: Q-2019.12-SP1
+Date   : Mon Feb 19 11:51:52 2024
+****************************************
+
+
+
+  Attributes
+  ----------
+      a  -  Switching activity information / Switching power information annotated on net
+      p  -  Propagated switching activity information on net
+      d  -  Default switching activity used on net
+      u  -  Net switching activity uninitialized
+      m  -  Net is driven by multiple pins
+      b  -  Net is a primary input (boundary net)
+
+		Toggle rates reported with respect to time unit 1ns
+--------------------------------------------------------------------------------
+                                  Total      Static   Toggle   Switching
+Net                         Vdd   Net Load   Prob.    Rate     Power      Attrs
+--------------------------------------------------------------------------------
+net12                       1.80    0.015    0.503    0.0001   3.008e-09  a
+net13                       1.80    0.014    0.547    0.0001   2.515e-09  a
+net7                        1.80    0.016    0.511    0.93e-4  2.464e-09  a
+net5                        1.80    0.011    0.535    0.0001   1.785e-09  a
+net8                        1.80    0.011    0.535    0.98e-4  1.767e-09  a
+net11                       1.80    0.017    0.425    0.63e-4  1.699e-09  a
+net6                        1.80    0.011    0.493    0.88e-4  1.568e-09  a
+net9                        1.80    0.015    0.471    0.59e-4  1.468e-09  a
+net10                       1.80    0.016    0.451    0.44e-4  1.177e-09  a
+net14                       1.80    0.013    0.451    0.49e-4  1.062e-09  a
+net19                       1.80    0.009    0.128    0.43e-4  6.300e-10  a
+net16                       1.80    0.011    0.096    0.31e-4  5.727e-10  a
+net0                        1.80    0.009    0.070    0.26e-4  3.833e-10  a
+net17                       1.80    0.010    0.048    0.23e-4  3.795e-10  a
+net4                        1.80    0.007    0.086    0.26e-4  2.821e-10  a
+net1                        1.80    0.006    0.012    0.80e-5  7.850e-11  a
+out1                        1.80    0.001    0.096    0.31e-4  4.134e-11  a
+out4                        1.80    0.001    0.128    0.43e-4  3.910e-11  a
+net2                        1.80    0.008    0.000    0.30e-5  3.681e-11  a
+out2                        1.80    0.001    0.048    0.23e-4  2.187e-11  a
+net15                       1.80    0.012    0.000    0.10e-5  1.964e-11  a
+out0                        1.80    0.001    0.000    0.10e-5  1.600e-12  a
+net3                        1.80    0.009    0.000    0.0000      0.0000  a
+net18                       1.80    0.008    0.000    0.0000      0.0000  a
+out3                        1.80    0.001    0.000    0.0000      0.0000  a
+--------------------------------------------------------------------------------
+Total (25 nets)                                                2.100e-08 Watt
+
+
+
+                                      Int      Switch   Leak      Peak     Peak            Glitch   X-tran   Total
+Hierarchy                             Power    Power    Power     Power    Time            Power    Power    Power    %
+---------------------------------------------------------------------------------------------------------------------------
+low_level_0                           1.54e-08 2.10e-08 8.34e-11  3.33e-04 1712000-1712001    0.000    0.000 3.65e-08 100.0
+1
