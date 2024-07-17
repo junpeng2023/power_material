@@ -1,0 +1,63 @@
+****************************************
+Report : Averaged Power
+	-net_power
+	-hierarchy
+	-sort_by net_switching_power
+	-power_greater_than       0
+	-nosplit
+Design : high_level_0
+Version: Q-2019.12-SP1
+Date   : Wed Jul 17 12:17:04 2024
+****************************************
+
+
+
+  Attributes
+  ----------
+      a  -  Switching activity information / Switching power information annotated on net
+      p  -  Propagated switching activity information on net
+      d  -  Default switching activity used on net
+      u  -  Net switching activity uninitialized
+      m  -  Net is driven by multiple pins
+      b  -  Net is a primary input (boundary net)
+
+		Toggle rates reported with respect to time unit 1ns
+--------------------------------------------------------------------------------
+                                  Total      Static   Toggle   Switching
+Net                         Vdd   Net Load   Prob.    Rate     Power      Attrs
+--------------------------------------------------------------------------------
+net15                       1.80    0.015    0.540    0.1629   3.992e-06  p
+net18                       1.80    0.012    0.409    0.1817   3.511e-06  p
+net7                        1.80    0.019    0.500    0.1000   3.154e-06  a
+net16                       1.80    0.012    0.617    0.1584   3.056e-06  p
+net3                        1.80    0.011    0.698    0.1583   2.830e-06  p
+net10                       1.80    0.017    0.500    0.1000   2.809e-06  a
+net14                       1.80    0.017    0.500    0.1000   2.755e-06  a
+net9                        1.80    0.016    0.500    0.1000   2.597e-06  a
+net11                       1.80    0.016    0.500    0.1000   2.588e-06  a
+net19                       1.80    0.009    0.565    0.1691   2.548e-06  p
+net2                        1.80    0.010    0.602    0.1581   2.527e-06  p
+net8                        1.80    0.015    0.500    0.1000   2.510e-06  a
+net12                       1.80    0.014    0.500    0.1000   2.336e-06  a
+net4                        1.80    0.009    0.567    0.1667   2.296e-06  p
+net13                       1.80    0.014    0.500    0.1000   2.277e-06  a
+net0                        1.80    0.010    0.568    0.1439   2.257e-06  p
+net6                        1.80    0.013    0.500    0.1000   2.173e-06  a
+net17                       1.80    0.008    0.552    0.1413   1.925e-06  p
+net5                        1.80    0.011    0.500    0.1000   1.860e-06  a
+net1                        1.80    0.007    0.534    0.1598   1.815e-06  p
+out3                        1.80    0.001    0.409    0.1817   3.294e-07  p
+out0                        1.80    0.001    0.540    0.1629   2.636e-07  p
+out1                        1.80    0.001    0.617    0.1584   2.087e-07  p
+out4                        1.80    0.001    0.565    0.1691   1.525e-07  p
+out2                        1.80    0.001    0.552    0.1413   1.347e-07  p
+--------------------------------------------------------------------------------
+Total (25 nets)                                                5.291e-05 Watt
+
+
+
+                                      Int      Switch   Leak      Total
+Hierarchy                             Power    Power    Power     Power    %
+--------------------------------------------------------------------------------
+high_level_0                          5.22e-05 5.29e-05 8.72e-11  1.05e-04 100.0
+1
